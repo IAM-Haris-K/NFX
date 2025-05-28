@@ -1,69 +1,56 @@
+# NFX (NetFloweXplorer) Dashboard
 
-# Flask Converted Project
-
-This project is a simplified conversion of a React + TypeScript dashboard into a Flask web application using HTML, Tailwind CSS, and vanilla JavaScript.
-
-## 📁 Project Structure
-
-```
-flask_converted_project/
-│
-├── app.py                   # Main Flask application
-├── requirements.txt         # Python dependencies
-├── templates/               # HTML templates using Jinja2
-│   ├── layout.html
-│   ├── login.html
-│   ├── dashboard.html
-│   ├── network_traffic.html
-│   └── packet_analysis.html
-├── static/                  # Static files (CSS, JS, images)
-│   ├── css/
-│   └── js/
-```
-
-## 🚀 Getting Started
-
-### 1. Set up a Python environment
-
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the Flask server
-
-```bash
-python app.py
-```
-
-The app will be available at `http://127.0.0.1:5000`.
-
-## 🔐 Login Info
-
-Use the following dummy credentials to log in:
-
-- **Username:** `admin`
-- **Password:** `password123`
-
-## 🧱 Tech Stack
-
-- Flask (Python)
-- Tailwind CSS (CDN based)
-- HTML Templates (Jinja2)
-- Vanilla JavaScript
-
-## 🛠 Future Enhancements (Suggestions)
-
-- Add charts using Chart.js or ApexCharts.
-- Hook up a database for persistent login and data.
-- Add real-time monitoring features with WebSockets or polling.
+The **NFX Dashboard** is a web-based interface designed for real-time monitoring, analysis, and visualization of network traffic and security events. This application provides a centralized view of key security data, including live packet analysis, suspicious alerts, and traffic patterns—making it ideal for internal SOC (Security Operations Center) use or educational environments.
 
 ---
 
-© 2025 Bolt Security Interface – Flask Edition
+## 🔐 Features
+
+### ✔️ User Login System
+- Simple username/password authentication
+- Session-based user login/logout
+
+### 📊 Dashboard Overview
+- Summary of alert counts, event logs, and suspicious activities
+- Modular sections to visualize packet data and trends
+
+### 🌐 Network Traffic Visualization
+- View simplified real-time traffic data
+- Placeholder ready for integration with packet sniffers (e.g., tcpdump, Wireshark)
+
+### 🧪 Packet Analysis Page
+- Display of sample or real packet data
+- Supports inspection and review of suspicious payloads or IPs
+
+---
+
+## 🧱 Technologies Used
+
+- **Flask** – Python web framework
+- **Jinja2** – HTML templating engine
+- **Tailwind CSS** – Utility-first CSS framework
+- **Vanilla JavaScript** – Lightweight client-side interactivity
+
+---
+
+## 🚀 Usage Scenarios
+
+- Internal monitoring by security teams (SIEM-lite)
+- Cybersecurity training and labs
+- Visualization frontend for IDS/IPS logs (e.g., Suricata, Snort)
+- Educational project for Flask, network analysis, and frontend/backend integration
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+# Step 1: Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Step 2: Install dependencies
+pip install -r requirements.txt
+
+# Step 3: Run the Flask app
+python app.py

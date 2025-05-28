@@ -6,25 +6,21 @@ The **NFX Dashboard** is a web-based interface designed for real-time monitoring
 
 ## 🔐 Features
 
-### ✔️ User Login System
-- Simple username/password authentication
-- Session-based user login/logout
-
-### 📊 Dashboard Overview
+### Dashboard Overview
 - Summary of alert counts, event logs, and suspicious activities
 - Modular sections to visualize packet data and trends
 
-### 🌐 Network Traffic Visualization
+### Network Traffic Visualization
 - View simplified real-time traffic data
 - Placeholder ready for integration with packet sniffers (e.g., tcpdump, Wireshark)
 
-### 🧪 Packet Analysis Page
+### Packet Analysis Page
 - Display of sample or real packet data
 - Supports inspection and review of suspicious payloads or IPs
 
 ---
 
-## 🧱 Technologies Used
+## Technologies Used
 
 - **Flask** – Python web framework
 - **Jinja2** – HTML templating engine
@@ -33,7 +29,7 @@ The **NFX Dashboard** is a web-based interface designed for real-time monitoring
 
 ---
 
-## 🚀 Usage Scenarios
+## Usage Scenarios
 
 - Internal monitoring by security teams (SIEM-lite)
 - Cybersecurity training and labs
@@ -42,7 +38,7 @@ The **NFX Dashboard** is a web-based interface designed for real-time monitoring
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ```bash
 # Step 1: Create a virtual environment
